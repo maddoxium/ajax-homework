@@ -20,10 +20,11 @@ xhr.done(function(data) { console.log("success got data", data); });
 
 apiKey = "Z0zBY7wum0yjVC4oXH88nferaJ8cVSfl"
 
-gipyURL = "http://api.giphy.com/v1/gifs/search?q="+ "id" +"&api_key" + apiKey +"&limit=10"
+gipyUrl = "http://api.giphy.com/v1/gifs/search?q="+ "id" +"&api_key" + apiKey +"&limit=10"
 
+$("topic").on("click", function(){
+    giphyUrl
+}
+// create on click function to add in Id of button to giphy api 
 
-$.ajax({
-    url: giphyURL,
-    method: "GET"
-  })
+// create col that gifs can append to from returned data
